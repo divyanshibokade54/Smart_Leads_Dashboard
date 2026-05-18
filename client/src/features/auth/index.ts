@@ -1,2 +1,4 @@
-// Placeholder: Auth feature will be implemented in feat/04-auth-frontend
-export {};
+// Auth feature re-exports
+export { AuthProvider, useAuth } from '../../store';
+export { LoginPage } from '../../pages/LoginPage';
+export { RegisterPage } from '../../pages/RegisterPage';

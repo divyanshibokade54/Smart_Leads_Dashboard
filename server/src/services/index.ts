@@ -1,2 +1,2 @@
-// Placeholder: Services will be implemented per feature
-export {};
+export { authService } from './auth.service';
+export { leadService } from './lead.service';

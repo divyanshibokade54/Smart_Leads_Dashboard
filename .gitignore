@@ -1,32 +1,26 @@
 # Dependencies
 node_modules/
 
-# Environment
+# Environment variables (SECRETS - never push)
 .env
-.env.local
-.env.*.local
+server/.env
+client/.env
 
 # Build output
 dist/
 build/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Logs
+server/logs/
+*.log
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-
-# Coverage
-coverage/
+# IDE
+.vscode/
+.idea/
 
 # Docker
 docker-compose.override.yml

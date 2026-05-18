@@ -1,13 +1,13 @@
 import { Router } from 'express';
 import healthRoutes from './health.routes';
+import authRoutes from './auth.routes';
+import leadRoutes from './lead.routes';
 
 const router = Router();
 
 // Mount route groups
 router.use('/health', healthRoutes);
-
-// Future routes:
-// router.use('/auth', authRoutes);     → feat/03-auth-backend
-// router.use('/leads', leadRoutes);    → feat/06-leads-crud-backend
+router.use('/auth', authRoutes);
+router.use('/leads', leadRoutes);
 
 export default router;

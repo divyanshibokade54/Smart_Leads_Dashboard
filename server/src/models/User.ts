@@ -68,7 +68,7 @@ userSchema.methods.comparePassword = async function (candidatePassword: string):
 };
 
 // ─── Index for performance ──────────────
-userSchema.index({ email: 1 });
+// email index is auto-created by unique:true
 userSchema.index({ role: 1 });
 
 export const User = mongoose.model<IUser>('User', userSchema);
